@@ -21,24 +21,23 @@ export const registerUser = asyncHandler(async (req, res) => {
     throw new apiError(409, "User with email or username already exists");
   }
 
-  // create user object - create entry in db
+  // create an object of the user having its details which would be uploaded in the db
 
   const user = await User.create({
     password,
     username: username.toLowerCase(),
   });
 
-  // remove password response
+  // remove password from response
   const createdUser = await User.findById(user._id).select("-password");
 
-  // check for user creation
+  // check whether an user account is successfully created or not if not then display error message
   if (!createdUser) {
     throw new apiError(500, "Something went wrong while registering user");
   }
 
-  // return response
+  // Now user account is successfully created return response
   return res
     .status(201)
     .json(new apiResponse(200, createdUser, "User registered successfully"));
 });
-

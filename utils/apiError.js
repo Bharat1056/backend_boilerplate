@@ -1,3 +1,6 @@
+ // In javascript There is an already Error class defined but we want to override this class and make our own version of this
+
+ // That's why we use extends keyword
 class apiError extends Error {
     constructor(
         statusCode,
