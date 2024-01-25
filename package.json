@@ -1,11 +1,15 @@
 {
-  "name": "bharat-backend-boilerplate",
+  "name": "backend-struct",
   "version": "1.0.0",
-  "description": "This package gives us a boiler plate code for backend project",
+  "description": "Boiler plate code for backend project",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bharat1056/backend_boilerplate"
   },
   "author": "Bharat Panigrahi",
   "license": "MIT",

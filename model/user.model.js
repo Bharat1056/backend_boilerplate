@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
 //here we decide the entire configuration of each input field
-const userSchema = new Schema(
+const aliasSchema = new Schema(
   {
     //schema for username field
     username: {
@@ -23,4 +23,4 @@ const userSchema = new Schema(
   { timestamps: true } // at what time the user created user object is mongoDB database
 );
 
-export const User = mongoose.model("User", userSchema);
+export const Alias = mongoose.model("Alias", aliasSchema);
