@@ -1,0 +1,21 @@
+{
+  "name": "bharat-backend-boilerplate",
+  "version": "1.0.0",
+  "description": "This package gives us a boiler plate code for backend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bharat Panigrahi",
+  "license": "MIT",
+  "dependencies": {
+    "cookieparser": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
