@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import userRouter from "./router/user.routes.js"
+import aliasRouter from "./router/user.routes.js"
 
 const app = express();
 
@@ -21,11 +21,9 @@ app.use(cookieParser())
 
 // routes
 
-import userRouter from "./routes/user.routes.js"
 
 // routes declaration
-app.use("/api/v1/users", userRouter)
-
+app.use("/api/v1/users", aliasRouter)
 
 
 export default app
